@@ -1,0 +1,1321 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+    
+        
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Common Weakness Enumeration (CWE) is a list of software and hardware weaknesses." />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link href="/css/main.css?version=4.20.043026" rel="stylesheet" type="text/css" />
+	<link href="/css/custom.css" rel="stylesheet" type="text/css" />
+	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="/css/ie.css?version=1.7" />
+	<![endif]-->
+	
+        <script src="/includes/custom_filter.js" language="JavaScript" type="text/javascript"></script>
+	<script src="/includes/browserheight.js" language="JavaScript" type="text/javascript"></script>
+	<script src="/includes/jquery.js" language="JavaScript" type="text/javascript"></script>               	
+	<script src="/includes/cwe_minimizer.js?version=4.12.062923" language="JavaScript" type="text/javascript"></script>
+	<script src="/includes/cookie.js?version=4.12.062923" language="Javascript" type="text/javascript"></script>
+	<script src="/includes/includeglossarydef.js" language="JavaScript" type="text/javascript"></script>
+	<script src="/includes/custom.js" language="JavaScript" type="text/javascript"></script>
+	<script src=https://cmp.osano.com/AzyhULTdPkqmy4aDN/318aa814-0420-45bb-857d-8fb5fac33ff8/osano.js></script>
+	<link href="/css/print.css?version=1.11" rel="stylesheet" media="print" type="text/css" />
+	<link href="/css/mappingonly.css" rel="stylesheet" type="text/css" />
+	<noscript>
+	<style type="text/css">
+		#script { visibility:collapse; visibility:hidden; font-size:0px; height:0px; width:0px  }
+		#noscript { visibility:visible; font-size:inherit;  height:inherit; width:inherit}
+	</style>
+	</noscript>
+	<title>CWE - 
+
+CWE-310: CWE CATEGORY: Cryptographic Issues (4.20)
+</title>
+</head>
+<body onload="onloadCookie()">
+<a name="top" id="top"></a>
+	<div id="MastHead" style="width:100%">
+	
+	        <div style="width:60%;float:left;padding-top:15px;padding-left:10px;padding-bottom:2px;">
+	                <a href="/index.html" style="color:#32498D; text-decoration:none">
+	                <img src="/images/cwe_logo.jpg" width="153" height="55" style="float:left;border:0;margin-right:6px" alt="CWE" />
+	                <h1 style="color:#314a8d;font-size:1.5em;font-family:'Verdana',sans-serif;#eee;margin: .1em auto">Common Weakness Enumeration</h1>
+	                <p style="color:#314a8d;font-family:'Times New Roman';font-style:italic;font-size:1em;#eee;margin:.1em auto 0 auto">A community-developed list of SW &amp; HW weaknesses that can become vulnerabilities</p>
+	                </a>
+	        </div>
+	<div style="float:right;padding-top:0px;text-align:right;padding-left:8px;padding-right:4px;padding-bottom:0px;"><a href="/about/new_to_cwe.html" title="New to CWE click here logo"><img src="/images/new_to_cwe/new_to_cwe_click_here.png" height="90" border="0" alt="New to CWE? click here!" style="text-align:center"/></a></div>
+	<div style="float:right;padding-top:0px;text-align:right;padding-left:0px;padding-right:4px;padding-bottom:0px;"><a href="/topHW/index.html" title="CWE Most Important Hardware Weaknesses"> <img src="/images/mihw_logo.svg" width="90" border="0" alt="CWE Most Important Hardware Weaknesses" style="vertical-align:bottom"/></a></div>
+	<div style="float:right;padding-top:0px;text-align:right;padding-left:0px;padding-right:4px;padding-bottom:0px;"><a href="/top25/" title="CWE Top 25"><img src="/images/cwe_top_25_logo_simple.svg" width="90" border="0" alt="CWE Top 25 Most Dangerous Weaknesses" style="vertical-align:bottom"/></a></div>
+	
+	</div><!--End Masthead div-->
+
+
+<div id="HeaderBar" class="noprint">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">  
+	<tr> 
+		<td width="100%" align="left" style="padding-left:10px; font-size:75%;"> 
+                <a href="/" >Home</a>  &gt;  <a href="/data/index.html" >CWE List</a>  &gt;  
+
+CWE- Individual Dictionary Definition (4.20)
+&nbsp;
+		</td>
+		<td align="right" nowrap="nowrap" style="padding-right:12px">
+		<!-- Begin /includes/search_cwe_id.html -->
+<div class="noprint">
+  <form action="/cgi-bin/jumpmenu.cgi" align="right" style="padding:0px; margin:0px">
+	ID <label for="id" style="padding-right:5px">Lookup:</label>
+    <input id="id" name="id" type="text" style="width:50px; font-size:80%" maxlength="10" />
+	<input value="Go" style="padding: 0px; font-size:80%" type="submit">
+  </form>
+</div>
+<!-- End /includes/search_cwe_id.html --> 
+		</td>
+	</tr>
+</table>
+</div> <!--//HeaderBar-->
+<div class="yesprint">
+<hr width="100%" size="1" style="clear:both" color="#000000" />
+</div>
+
+<div class="topnav">
+<ul>
+<li><a href="/index.html">Home</a></li>
+<li>
+        <div class="dropdown">
+          <button class="dropbtn">About &#x25BC;</button>
+          <div class="dropdown-content">
+            <a href="/about/index.html">Who We Are</a>             
+            <a href="/about/user_stories.html">User Stories</a>        
+            <a href="/about/history.html">History</a>                                                          
+            <a href="/about/documents.html">Documents</a>
+            <a href="/about/cwe_videos.html">Videos</a>
+          </div>
+        </div>
+</li>
+<li>
+        <div class="dropdown">
+          <button class="dropbtn">Learn &#x25BC;</button>
+          <div class="dropdown-content">
+            <a href="/about/new_to_cwe.html">Basics</a>
+            <div class="dropdown-sub-group">
+              <a href="/documents/cwe_usage/guidance.html">Root Cause Mapping &nbsp; &#x25BA;</a>
+              <div class="dropdown-content-submenu">
+                <a href="/documents/cwe_usage/guidance.html">Guidance</a>
+                <a href="/documents/cwe_usage/quick_tips.html">Quick Tips</a>
+                <a href="/documents/cwe_usage/mapping_examples.html">Examples</a>
+              </div>
+            </div>
+            <a href="/community/submissions/overview.html">How to Contribute Weakness Content</a>
+            <a href="/about/faq.html">FAQs</a>
+            <a href="/documents/glossary/index.html">Glossary</a>           
+          </div>
+        </div>
+</li>
+<li>
+        <div class="dropdown">
+          <button class="dropbtn">Access Content &#x25BC;</button>
+          <div class="dropdown-content">
+            <div class="dropdown-sub-group">
+              <a href="/scoring/index.html#top_n_lists">Top-N Lists &nbsp; &#x25BA;</a>
+              <div class="dropdown-content-submenu">
+                <a href="/top25/">Top 25 Software</a>
+                <a href="/topHW/index.html">Top Hardware</a>     
+                <a href="/top25/archive/2025/2025_kev_list.html">Top 10 KEV Weaknesses</a>
+              </div>
+            </div>
+            <div class="dropdown-sub-group">
+              <a href="/data/index.html">CWE List &nbsp; &#x25BA;</a>
+              <div class="dropdown-content-submenu">
+              <a href="/data/index.html">Current Version</a>                
+                <a href="/data/reports.html">Reports</a>
+                <a href="/data/pdfs.html">Visualizations</a>     
+                <a href="/data/archive.html">Releases Archive</a>
+              </div>
+            </div>
+            <a href="/data/downloads.html">Downloads</a>           
+            <a href="https://github.com/CWE-CAPEC/REST-API-wg/blob/main/Quick%20Start.md" target="_blank">REST API</a>
+          </div>
+        </div>
+</li>
+<li>
+        <div class="dropdown">
+          <button class="dropbtn">Community &#x25BC;</button>
+          <div class="dropdown-content">
+            <div class="dropdown-sub-group">
+              <a href="/news/">News &nbsp; &#x25BA;</a>
+              <div class="dropdown-content-submenu">
+                <a href="/news/archives/news2026.html">Current News</a>
+                <a href="https://medium.com/@CWE_CAPEC" target="_blank">Blog</a>
+                <a href="/news/podcast.html">Podcast</a>
+                <a href="/news/archives/index.html">News Archive</a>
+              </div>
+            </div>
+            <a href="/community/board.html">CWE Board</a>            
+            <a href="/community/working_groups.html">Working Groups &amp; Special Interest Groups</a>  
+            <a href="/community/registration.html">Email Lists</a>  
+          </div>
+        </div>
+</li>
+<li>
+        <div class="dropdown">
+          <button class="dropbtn">Search &#x25BC;</button>
+          <div class="dropdown-content">
+            <a href="/">Search CWE List</a>         
+            <a href="/find/index.html">Search Website</a>            
+        </div>
+</li>
+
+</ul>
+
+</div>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="MainPane">
+  <tr>
+	<!-- begin left side menu -->
+    <td valign="top" rowspan="2" id="LeftPane">
+	<!--include virtual="/includes/leftsidemenu.html" Removed 11212016--> 
+	<script type="text/javascript">browserheight();</script>
+	</td>
+	<!-- end left side menu -->
+    <td style="height:1px"></td>
+	<!-- begin right column -->
+	<td valign="top" align="center" rowspan="2" nowrap="nowrap" id="RightPane">
+
+
+	</td>
+	<!-- end right side menu -->
+  </tr>
+  <tr>
+	<!-- begin content pane -->
+    <td valign="top" width="100%" id="Contentpane">
+	
+	<!--Glossary tags-->
+	
+<div id="styled_popup" name="styled_popup" style="display:none; position:fixed; top:300; height:auto; width:300px; z-index:1000">
+<table width="300" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #32498D;">
+<tr style="background-color:#32498D; color:#ffffff;">
+<td width="100%" style="padding:1px 5px 1px 5px; border-bottom:1px solid #000000"><div width="100%" style="font-weight:bold;">CWE Glossary Definition</div></td>
+<td nowrap="nowrap" style="padding:1px; border-bottom:1px solid #000000" valign="top"><a href="javascript:styledPopupClose();"><img src="/images/layout/close.gif" border="0"  alt="x"></a></td>
+</tr>
+<tr><td colspan="2" style="background: url(/images/layout/ylgradient.jpg); background-repeat: repeat-x repeat-y; padding:5px; background-color:#FFFFCC; " valign="top">
+<div id="output" style="max-height:400px; overflow-y:auto"></div>
+</td></tr>
+</table>
+</div>
+
+<script src="/includes/nav.js" language="JavaScript" type="text/javascript" /></script>
+<noscript>
+ <style>div.collapseblock { display:inline} </style>
+</noscript>
+
+<!-- Start main content -->
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" encoding="iso-8859-1">
+<!-- Copyright (c) 2006-2024, The MITRE Corporation. CWE and the CWE logo are trademarks of The MITRE Corporation. -->
+<a xmlns:xhtml="http://www.w3.org/1999/xhtml" name="310"></a>
+<div style="overflow:auto;">
+    <h2 style="display:inline; margin:0px 0px 2px 0px; vertical-align: text-bottom">CWE CATEGORY: Cryptographic Issues</h2>
+    <div style="text-align:right; margin:5px 0px 0px 5px; padding-bottom:1px; white-space:nowrap;"></div>
+</div>
+<div xmlns:xhtml="http://www.w3.org/1999/xhtml" id="CWEDefinition" class="Category">
+    <div class="title">
+        <div class="status">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tbody>
+                    <tr>
+                        <td valign="top" align="left" width="33%" nowrap>
+                            <div style="font-weight:bold">
+                                Category ID: 310
+                                
+                            </div><span>
+
+                            
+                                <span style="font-weight:bold">
+                                    <a href="#Vulnerability_Mapping_Notes_310">Vulnerability Mapping</a>:<span class="tool">
+                                        <span style="color:#FF0000">PROHIBITED</span>
+                                        <span class="tip">This CWE ID must not be used to map to real-world vulnerabilities</span>
+                                    </span>
+                                    
+                                </span>
+                                <br>
+                            
+                            
+                            
+
+                            </span>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    
+    
+    
+        
+        
+<div id="Summary">
+    <div class="heading" id="Summary_310"><span><a href="javascript:toggleblocksOC('310_Summary');"><img
+                    id="ocimg_310_Summary" src="/images/head_more.gif" border="0" alt="+"></a> </span>Summary</div>
+    <div name="oc_310_Summary" id="oc_310_Summary" class="expandblock">
+        <div class="detail">
+            <div class="indent">Weaknesses in this category are related to the design and implementation of data confidentiality and integrity. Frequently these deal with the use of encoding techniques, encryption libraries, and hashing algorithms. The weaknesses in this category could lead to a degradation of the quality data if they are not addressed.
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+        
+
+
+
+
+<div id="Membership">
+    <div class="heading" id="Membership_310"><span><a href="javascript:toggleblocksOC('310_Membership');"><img
+                    id="ocimg_310_Membership" src="/images/head_more.gif" border="0" alt="+"></a> </span>Membership</div>
+    <div name="oc_310_Membership" id="oc_310_Membership" class="expandblock">
+        <div class="">
+            <div class="indent">
+                <div xmlns:saxon="http://saxon.sf.net/" xmlns:xalan="http://xml.apache.org/xalan" class="tabledetail"
+                    style="padding-top:10px">
+                    <table width="98%" cellpadding="0" cellspacing="0" border="0" id="Detail">
+                        <tr>
+                            <th valign="top" width="110px">Nature</th>
+                            <th valign="top" width="40px">Type</th>
+                            <th valign="top" width="50px">ID</th>
+                            <th valign="top">Name</th>
+                        </tr>
+                        <tbody>
+                            
+                            
+                                
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                
+                            
+                                
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                
+                            
+                                
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+                                        
+                                        
+                                    
+                                
+                            
+                            
+                            
+                            
+                                
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            
+                                
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            
+                            
+                                
+                                
+                                          
+                                         
+                                <tr class="primary View">
+                                    <td valign="top">MemberOf</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/view.gif" alt="View"  class="icon"><span
+                                                class="tip">View - a subset of CWE entries that provides a way of examining CWE content. The two main view structures are Slices (flat lists) and Graphs (containing relationships between entries).</span></span></td>
+                                    <td valign="top">635</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/635.html" target="_blank" rel="noopener noreferrer">Weaknesses Originally Used by NVD from 2008 to 2016</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                          
+                                         
+                                <tr class="primary View">
+                                    <td valign="top">MemberOf</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/view.gif" alt="View"  class="icon"><span
+                                                class="tip">View - a subset of CWE entries that provides a way of examining CWE content. The two main view structures are Slices (flat lists) and Graphs (containing relationships between entries).</span></span></td>
+                                    <td valign="top">699</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/699.html" target="_blank" rel="noopener noreferrer">Software Development</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Category">
+                                    <td valign="top">MemberOf</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/category.gif" alt="Category"  class="icon"><span
+                                                class="tip">Category - a CWE entry that contains a set of other entries that share a common characteristic.</span></span></td>
+                                    <td valign="top">1346</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/1346.html" target="_blank" rel="noopener noreferrer">OWASP Top Ten 2021 Category A02:2021 - Cryptographic Failures</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">261</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/261.html" target="_blank" rel="noopener noreferrer">Weak Encoding for Password</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">324</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/324.html" target="_blank" rel="noopener noreferrer">Use of a Key Past its Expiration Date</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">325</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/325.html" target="_blank" rel="noopener noreferrer">Missing Cryptographic Step</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">328</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/328.html" target="_blank" rel="noopener noreferrer">Use of Weak Hash</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">331</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/331.html" target="_blank" rel="noopener noreferrer">Insufficient Entropy</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">334</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/334.html" target="_blank" rel="noopener noreferrer">Small Space of Random Values</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">335</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/335.html" target="_blank" rel="noopener noreferrer">Incorrect Usage of Seeds in Pseudo-Random Number Generator (PRNG)</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">338</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/338.html" target="_blank" rel="noopener noreferrer">Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">347</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/347.html" target="_blank" rel="noopener noreferrer">Improper Verification of Cryptographic Signature</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">916</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/916.html" target="_blank" rel="noopener noreferrer">Use of Password Hash With Insufficient Computational Effort</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">1204</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/1204.html" target="_blank" rel="noopener noreferrer">Generation of Weak Initialization Vector (IV)</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                                
+                                
+                                    
+                                         
+                                <tr class="primary Weakness">
+                                    <td valign="top">HasMember</td>
+                                    <td valign="top" nowrap class="right" align="center" style="padding-top:1px"><span
+                                            class="tool"><img src="/images/icons/base.gif" alt="Base"  class="icon"><span
+                                                class="tip">Base - a weakness that is still mostly independent of a resource or technology, but with sufficient details to provide specific methods for detection and prevention. Base level weaknesses typically describe issues in terms of 2 or 3 of the following dimensions: behavior, property, technology, language, and resource.</span></span></td>
+                                    <td valign="top">1240</td>
+                                    <td valign="top">
+                                        
+                                        <a href="/data/definitions/1240.html" target="_blank" rel="noopener noreferrer">Use of a Cryptographic Primitive with a Risky Implementation</a>
+                                        
+                                    </td>
+                                </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+        
+
+<div id="Vulnerability_Mapping_Notes">
+    <div class="heading" id="Vulnerability_Mapping_Notes_310"><span><a href="javascript:toggleblocksOC('310_Vulnerability_Mapping_Notes');"><img
+                    id="ocimg_310_Vulnerability_Mapping_Notes" src="/images/head_more.gif" border="0" alt="+"></a>
+        </span>Vulnerability Mapping Notes</div>
+    <div name="oc_310_Vulnerability_Mapping_Notes" id="oc_310_Vulnerability_Mapping_Notes" class="expandblock">
+        <div class="detail">
+            <div class="indent">
+                <div id="Grouped">
+                    <table width="98%" cellpadding="0" cellspacing="0" border="0" class="Detail">
+                        <tr>
+                            <td>
+                                <p class="subheading" style="display:inline-block;">
+    Usage:
+    <span style="color:#FF0000">
+        PROHIBITED
+    </span>
+</p>
+<div style="font-size:90%; font-style:italic; padding:5px;display:inline-block;">
+    (this CWE ID must not be used to map to real-world vulnerabilities)
+</div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" width="100%">
+                                <p>
+                                    
+                                        
+                                        
+                                            <span class="suboptheading">Reason: </span>
+                                            
+                                                
+                                                    Category
+                                                
+                                            
+                                        
+                                    
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="suboptheading"> Rationale: </p>
+                                This entry is a Category. Using categories for mapping has been discouraged since 2019. Categories are informal organizational groupings of weaknesses that can help CWE users with data aggregation, navigation, and browsing. However, they are not weaknesses in themselves [<a href="#REF-1287_310">REF-1287</a>]. This CWE ID may have become widely-used because of NIST&#39;s usage in NVD from 2008 to 2016 (see <a href="/data/definitions/635.html">CWE-635</a> view, updated to the <a href="/data/definitions/1003.html">CWE-1003</a> view in 2016).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="suboptheading"> Comments: </p>Some weakness-oriented alternatives might be found as descendants under Use of a Broken or Risky Cryptographic Algorithm (<a href="/data/definitions/327.html">CWE-327</a>)
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+        
+        
+
+
+<div id="References">
+    <div class="heading" id="References_310"><span><a href="javascript:toggleblocksOC('310_References');"><img
+                    id="ocimg_310_References" src="/images/head_more.gif" border="0" alt="+"></a> </span>References</div>
+    <div name="oc_310_References" id="oc_310_References" class="expandblock">
+        <div class="detail">
+            <div class="indent">
+                <div id="Grouped">
+                    <table width="98%" cellpadding="0" cellspacing="0" border="0" class="Detail">
+                        
+                            
+                                
+                                
+                                
+                                
+                                    <tr>
+                                        <td valign="top">
+                                            
+                                            
+                                                
+                                                    
+                                                                                                    
+                                                
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            
+                                                
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            <div id="REF-7_310">[REF-7] Michael Howard and David LeBlanc. &#34;Writing Secure Code&#34;. Chapter 8, &#34;Cryptographic Foibles&#34; Page 259. 2nd Edition.  Microsoft Press. 2002-12-04.
+                                            
+                                                &lt;<a href="https://www.microsoftpressstore.com/store/writing-secure-code-9780735617223" target="_blank" rel="noopener noreferrer">https://www.microsoftpressstore.com/store/writing-secure-code-9780735617223</a>&gt;.
+                                            
+                                            
+                                            </div>
+                                        </td>
+                                    </tr>
+                                
+                            
+                        
+                            
+                                
+                                
+                                
+                                
+                                    <tr>
+                                        <td valign="top">
+                                            
+                                            
+                                                
+                                                    
+                                                
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            
+                                                
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            <div id="REF-1287_310">[REF-1287] MITRE. &#34;Supplemental Details - 2022 CWE Top 25&#34;. Details of Problematic Mappings.    2022-06-28.
+                                            
+                                                &lt;<a href="https://cwe.mitre.org/top25/archive/2022/2022_cwe_top25_supplemental.html#problematicMappingDetails" target="_blank" rel="noopener noreferrer">https://cwe.mitre.org/top25/archive/2022/2022_cwe_top25_supplemental.html#problematicMappingDetails</a>&gt;.
+                                            
+                                            
+                                                <i>URL validated: 2024-11-17</i>.
+                                            
+                                            </div>
+                                        </td>
+                                    </tr>
+                                
+                            
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        
+        <div id="Content_History">
+    <div class="heading" id="Content_History_310"><span><a href="javascript:toggleblocksOC('310_Content_History');"><img
+                    id="ocimg_310_Content_History" src="/images/head_more.gif" border="0" alt="+"></a> </span>Content
+        History</div>
+    <div name="oc_310_Content_History" id="oc_310_Content_History" class="expandblock">
+        <div class="tabledetail">
+            <div class="indent">
+                <div style="margin-top: 10px">
+                    <table width="98%" cellpadding="0" cellspacing="0" border="0" class="Detail">
+                        <thead class="Submissions">
+                            <tr>
+                                <th valign="top" colspan="3" class="title"><span><a
+                                            href="javascript:toggleblocksOC('310_Submissions');"><img
+                                                id="ocimg_310_Submissions" src="/images/head_more.gif" border="0"
+                                                alt="+"></a> </span>Submissions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="oc_310_Submissions" class="expandblock">
+                            <tr>
+                                <th valign="top" style="width:200px;">Submission Date</th>
+                                <th valign="top" nowrap>Submitter</th>
+                                <th valign="top" nowrap>Organization</th>
+                            </tr>
+                            <tr>
+                                <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                    2006-07-19
+                                    
+                                        <br><span class="smaller" style="font-style:italic">(CWE Draft 3, 2006-07-19)</span>
+                                    
+                                    </td>
+                                <td valign="top">PLOVER</td>
+                                <td valign="top"></td>
+                            </tr>    
+                            <tr>
+                                <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                        
+                            <thead class="Modifications">
+                                <tr>
+                                    <th valign="top" colspan="3" class="title"><span><a
+                                                href="javascript:toggleblocksOC('310_Modifications');"><img
+                                                    id="ocimg_310_Modifications" src="/images/head_less.gif" border="0"
+                                                    alt="+"></a> </span>Modifications</th>
+                                </tr>
+                            </thead>
+                            <tbody id="oc_310_Modifications" class="collapseblock">
+                                <tr>
+                                    <th valign="top">Modification Date</th>
+                                    <th valign="top" nowrap>Modifier</th>
+                                    <th valign="top" nowrap>Organization</th>
+                                </tr>
+                                
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2023-06-29
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 4.12, 2023-06-29)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Mapping_Notes
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2023-04-27
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 4.11, 2023-04-27)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Relationships
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2022-10-13
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 4.9, 2022-10-13)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Maintenance_Notes, References
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2021-10-28
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 4.6, 2021-10-28)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Relationships
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2020-02-24
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 4.0, 2020-02-24)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Description, Maintenance_Notes, Relationships
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2019-06-20
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 3.3, 2019-06-20)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Relationships
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2018-03-27
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 3.1, 2018-03-27)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated References, Relationships
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2017-11-08
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 3.0, 2017-11-08)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Applicable_Platforms, Functional_Areas, References, Related_Attack_Patterns, Relationship_Notes
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2017-01-19
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 2.10, 2017-01-19)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Relationships
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2015-12-07
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 2.9, 2015-12-07)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Relationships
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2014-02-18
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 2.6, 2014-02-19)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Related_Attack_Patterns
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2013-07-17
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 2.5, 2013-07-17)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Relationships
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2010-02-16
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 1.8, 2010-02-16)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated References
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2009-10-29
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 1.6, 2009-10-29)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Relationships
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2009-07-27
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 1.5, 2009-07-27)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Maintenance_Notes, Relationship_Notes, Relationships
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td valign="top" nowrap rowspan="2" style="border-bottom:1px solid #BAC5E3">
+                                            2008-09-08
+                                            
+                                            <br><span class="smaller" style="font-style:italic">(CWE 1.0, 2008-09-09)</span>
+                                            
+                                        </td>
+                                        <td valign="top">CWE Content Team</td>
+                                        <td valign="top">MITRE</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" colspan="2" style="border-bottom:1px solid #BAC5E3; font-size:90%; background-color:#eeeeee">
+                                            updated Maintenance_Notes, Relationships, Relationship_Notes, Taxonomy_Mappings
+                                        </td>
+                                    </tr>
+                                    
+                                
+                            </tbody>
+                        
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+    
+</div>
+<!-- End main content -->
+	<div id="More_Message_Custom" style="display:none;">
+<div style="padding:15px 0px 0px 0px;color:#ff0000;font-size:95%;font-weight:bold;text-align:center;" >More information is available &mdash; Please edit the custom filter or select a different filter.</div></div>
+
+	</td>
+	<!-- end content pane -->
+  </tr>
+</table>
+<div id="FootPane" class="noprint">
+  <div id="footbar">
+    <b>Page Last Updated: </b>
+
+
+April 30, 2026
+  </div>
+  <div class="Footer noprint">
+  <a name="footer" id="footer"></a>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="ltgreybackground" style="clear:both">
+      <tr>
+        <td colspan="3" id="line"><div class="line">&nbsp;</div></td>
+      </tr>
+      <tr>
+        <td valign="middle" nowrap="nowrap">
+          <div id="footerlinks" class="footlogo">
+            <a href="http://www.mitre.org" target="_blank" rel="noopener noreferrer"><img src="/images/mitre_logo.gif" height="36" border="0" alt="MITRE" title="MITRE"/></a>
+          </div>
+        </td>
+        <td width="100%" valign="top" style="padding:6px 0px;">
+          <div id="footerlinks">
+            <a href="/sitemap.html">Site Map</a> | 
+            <a href="/about/termsofuse.html">Terms of Use</a> | 
+            <a href="#" onclick="Osano.cm.showDrawer('osano-cm-dom-info-dialog-open')">Manage Cookies</a> | 
+            <a href="/about/cookie_notice.html">Cookie Notice</a> | 
+            <a href="/about/privacy_policy.html">Privacy Policy</a> | 
+            <a href="mailto:cwe@mitre.org">Contact Us</a> | 
+            <a target="_blank" href="https://x.com/CweCapec"><img src="/images/x-logo-black.png" width="18" height="18" style="border:0;vertical-align:right;" alt="CWE on X" title="CWE on X"></a>
+            <a target="_blank" href="https://www.linkedin.com/showcase/cve-cwe-capec"><img src="/images/linkedin_sm.jpg" width="20" height="20" style="border:0;vertical-align:right;" alt="CWE on LinkedIn" title="CWE on LinkedIn"></a>
+            <a target="_blank" href="https://bsky.app/profile/cweprogram.bsky.social"><img src="/images/bluesky_logo_sm.png" width="18" height="18" style="border:0;vertical-align:right;" alt="CWE on Bluesky" title="Bluesky"></a>
+            <a target="_blank" href="https://mastodon.social/@CWE_Program"><img src="/images/mastodon-logo.png" width="20" height="20" style="border:0;vertical-align:right;" alt="CWE on Mastodon" title="CWE on Mastodon"></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCpY9VIpRmFK4ebD6orssifA"><img src="/images/youtube.png" width="20" height="20" style="border:0;vertical-align:right;" alt="CWE YouTube channel" title="CWE YouTube Channel"></a> 
+            <a href="/news/podcast.html"><img src="/images/out_of_bounds_read_logo.png" width="22" height="22" style="border:0;vertical-align:right;" alt="CWE Out-of-Bounds-Read Podcast" title="CWE Out-of-Bounds-Read Podcast"></a>       
+			      <a target="_blank" href="https://medium.com/@CWE_CAPEC"><img src="/images/medium.png" width="20" height="20" style="border:0;vertical-align:right;" alt="CWE Blog on Medium blog" title="CWE Blog on Medium"></a>   
+          </div>
+          <p>Use of the Common Weakness Enumeration (CWE&trade;) and the associated references from this website are subject to the <a href="/about/termsofuse.html">Terms of Use</a>. CWE is sponsored by the <a target="_blank" rel="noopener noreferrer" href="https://www.dhs.gov/">U.S. Department of Homeland Security</a> (DHS) <a target="_blank" rel="noopener noreferrer" href="https://www.dhs.gov/cisa/cybersecurity-division">Cybersecurity and Infrastructure Security Agency</a> (CISA) and managed by the <a href="https://www.dhs.gov/science-and-technology/hssedi" target="_blank" rel="noopener noreferrer">Homeland Security Systems Engineering and Development Institute</a> (HSSEDI) which is operated by <a target="_blank" rel="noopener noreferrer" href="http://www.mitre.org/">The MITRE Corporation</a> (MITRE). Copyright &copy; 2006&ndash;2026, The MITRE Corporation. CWE, CWSS, CWRAF, and the CWE logo are trademarks of The MITRE Corporation.</p>
+        </td>
+        <td valign="middle" nowrap="nowrap">
+          <div id="footerlinks" class="footlogo">
+            <a href="https://www.dhs.gov/science-and-technology/hssedi" target="_blank" rel="noopener noreferrer"><img src="/images/hssedi.png" height="36" border="0" alt="HSSEDI" title="HSSEDI"/></a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TCLW30GNGV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TCLW30GNGV');
+</script>
+
+</body>
+</html>
+
+
+ 
+    
+    
+
+
+</html>
