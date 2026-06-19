@@ -32,11 +32,10 @@ Revised as **INCITS 359-2012** in 2012.
 
 ## Relevance to Cosmian KMS
 
-The Cosmian KMS four-role model (Operator, CryptoOfficer, Administrator, Auditor) is
-designed within the ANSI/INCITS 359 framework:
+The Cosmian KMS two-role model (Operator, CryptoOfficer) draws on the
+ANSI/INCITS 359 framework:
 
 | ANSI/INCITS 359 concept | Cosmian KMS implementation |
 |---|---|
 | §4.2 Core RBAC | Users assigned exactly one role per request; each role has a well-defined permission set |
-| §4.3 Hierarchical RBAC | Administrator supersedes CryptoOfficer and Operator; CryptoOfficer manages lifecycle; Operator handles crypto use |
-| §4.4 Constrained RBAC — Static Separation of Duty | Auditor role is mutually exclusive with all other roles; validated at server startup |
+| §4.3 Hierarchical RBAC | CryptoOfficer supersedes Operator for lifecycle operations; both have non-overlapping permission sets |

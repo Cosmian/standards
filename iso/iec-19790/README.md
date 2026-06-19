@@ -60,7 +60,7 @@ authentication** requirement area (area 3):
 
 | ISO/IEC 19790 requirement | Cosmian KMS implementation |
 |---|---|
-| Mandatory **Crypto Officer** role — responsible for cryptographic module initialisation, configuration, and key management | **CryptoOfficer** role: Create, Import, Certify, Activate, Revoke, Destroy, ReKey, Get/Export (lifecycle + key output) |
+| Mandatory **Crypto Officer** role — responsible for cryptographic module initialisation, configuration, and key management | **CryptoOfficer** role: Create, Import, Certify, Activate, Revoke, Destroy, ReKey, Get/Export (lifecycle + key output + ownership bypass) |
 | Mandatory **User** role — responsible for general operation | **Operator** role (default): Encrypt, Decrypt, Sign, MAC, Hash (crypto use only) |
 | Separation between key management and key use | CryptoOfficer cannot Encrypt/Decrypt/Sign; Operator cannot Create/Destroy/Get key material |
-| Optional Maintenance role | Not implemented; **Administrator** and **Auditor** are Cosmian extensions beyond FIPS 140-3 |
+| Optional Maintenance role | Not implemented |
